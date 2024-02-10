@@ -1,0 +1,77 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     background-image: url(netflix.jpg);
+     color: #ffffff; /* her biri beyaz olan altı rengin ortalaması */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container{
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.3); /* rgba renklerin karışımı ve opaklığı ayarı, arkaplanı hafif saydam yapar */
+     margin: auto;
+    
+}
+#title{        /* "NET" metninin rengi, yazı stili, harfler arası boşluk ve font size verilmesi */
+     color: wheat;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 50px;
+     letter-spacing: 0.06em;
+}
+span{          /* "FLIX" metninin rengi verilmesi*/
+     color: #ff0000;
+}
+#description{ /*Netflix yazısı altındaki ufak açıklama bölümünün düzenlenmesi*/
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+}
+#header{       /*Netflix yazısı ve açıklama kısmının bulunduğu bölümün sayfaya ortalanması */
+     text-align: center;
+}
+#survey-form-container{ /*kullanıcıdan bilgilerin alındığı survey kısmının hizalanması şekillendirilmesi ve ayarlanması */
+     width: 500px;
+     background-color: rgba(0, 0, 0, 0.8);
+     margin: auto;
+     padding: 30px 40px;
+     margin-bottom: 30px;
+}
+#name, #age, #email, #dropdown, #feedback{ /* survey kısmındaki belli id ile belirtilmiş input bölmelerinin ayarlanması */
+     width: 100%;
+     padding: 10px;
+     margin: 10px;
+}
+.input-box{
+     margin-top: 20px;
+}
+#checkbox, #radio{
+     margin-top: 40px ;
+}
+#feedback{
+     resize: none;
+     height: 91.46px;
+}
+#form-button{
+     width: 160px;
+     height: 45px;
+     background-color: #ff0000;
+     border-radius: 50px;
+     border:none;
+     color: white;
+     cursor: pointer;
+     margin-top: 15px;
+     transition: 0.5s;
+}
+#form-button:hover{
+     background-color: #ffffff;
+     color: #ff0000;
+}
+.form-submit{
+     display: flex;
+     justify-content: space-between;
+}
